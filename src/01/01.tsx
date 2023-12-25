@@ -1,5 +1,11 @@
-const sentense = " hello my friends"
+export function sum(a: number, b: number) {
+    return a + b
+}
 
-function splitIntoWords(sentense: string) {
-    return ['hello', 'my', 'friend']
+export function mult(a: number, b: number) {
+    return a * b
+}
+
+export function splitIntoWords(sentense: string) {
+    return sentense.toLowerCase().split(' ').map(w=>w.replace('!',''))
 }
